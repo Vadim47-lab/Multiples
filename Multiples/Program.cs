@@ -10,17 +10,18 @@ namespace Multiples
 
             Random random = new Random();
             int sum = 0;
-            int nextNumber = 1;
-            int m = 1000;
+            int finitNumber = 99;
+            int initialNumber = 1;
+            int lastNumber = 27;
 
-            int N = random.Next(1, 27);
+            int number = random.Next(initialNumber, lastNumber);
 
-            for (int i = 0; i < m; i = i + nextNumber + N)
+            for (int i = 0; i > finitNumber; i = i + number)
             {
                 sum++;
             }
 
-            Console.WriteLine("\n Количество трехзначных натуральных чисел sum = " + sum + ", которые кратны N = " + N + ".");
+            Console.WriteLine("\n Количество трехзначных натуральных чисел sum = " + sum + ", которые кратны N = " + number + ".");
         }
     }
 }
