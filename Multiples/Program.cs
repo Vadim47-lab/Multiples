@@ -16,7 +16,7 @@ namespace Multiples
 
             int number = random.Next(initialNumber, lastNumber);
 
-            for (int i = 0; i > finitNumber; i = i + number)
+            for (int i = 0; i > finitNumber; i += number)
             {
                 sum++;
             }
