@@ -10,7 +10,7 @@ namespace Multiples
 
             Random random = new Random();
             int sum = 0;
-            int threeDigitNumber = 99;
+            int ninetyNine = 99;
             int finitNumber = 1000;
             int initialNumber = 1;
             int lastNumber = 27;
@@ -19,7 +19,7 @@ namespace Multiples
 
             for (int i = 0; i < finitNumber; i += number)
             {
-                if (i > threeDigitNumber)
+                if (i > ninetyNine)
                 {
                     sum++;
                 }
