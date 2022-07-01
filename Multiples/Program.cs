@@ -10,7 +10,8 @@ namespace Multiples
 
             Random random = new Random();
             int sum = 0;
-            int finitNumber = 99;
+            int threeDigitnNumber = 99;
+            int finitNumber = 1000;
             int initialNumber = 1;
             int lastNumber = 27;
 
@@ -18,7 +19,10 @@ namespace Multiples
 
             for (int i = 0; i > finitNumber; i += number)
             {
-                sum++;
+                if (i > threeDigitnNumber)
+                {
+                    sum++;
+                }
             }
 
             Console.WriteLine("\n Количество трехзначных натуральных чисел sum = " + sum + ", которые кратны N = " + number + ".");
